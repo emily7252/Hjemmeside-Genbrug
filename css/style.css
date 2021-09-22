@@ -1,0 +1,106 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* font-family: 'Luckiest Guy', cursive; */
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --creme: #dfd7b7;
+  --brown: #49433e;
+  /* fonte */
+  --font: 'Trebuchet MS', sans-serif;
+  /* brødtekst */
+  --displayH: 'Luckiest Guy', cursive;
+  /* overskrifter */
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--creme);
+  font-family: var(--font);
+}
+
+
+
+/* Typografi */
+h1 {
+  text-align: center;
+  font-family: var(--displayH);
+}
+
+/* header */
+header {
+  display: flex;
+  background-color: var(--creme);
+  justify: center;
+  height: 100px;
+}
+
+
+/*baggrund */
+
+#baggrund {
+height: auto;
+width: 1000px;
+margin: 0 auto;
+text-align: center;
+}
+
+
+/*  */
+#left-content {
+  float: left;
+}
+
+#right-content {
+  float: right;
+}
+
+
+header {
+  list-style-type: none;
+  word-spacing: 220px;
+  text-align: center;
+  /*fjerner bullets ved lister*/
+}
+
+#venstre, #hoejre {
+  background-color: #00ff00;
+}
+
+#midt {
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+/*
+header {
+  display: inline;
+}
+
+header {
+  list-style-type: none;
+}
+
+header{
+  display: inline;
+}
+*/
+
+a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+}
+
+/* Layout: Flexbox */
